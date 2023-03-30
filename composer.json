@@ -11,7 +11,7 @@
         "source": "https://github.com/bcit-ci/CodeIgniter"
     },
     "require": {
-        "php": ">=8.2.0",
+        "php": ">=7.4.0",
         "twilio/sdk": "^5.35",
         "omnipay/common": "^3",
         "php-http/guzzle6-adapter": "^1.1|^2",
@@ -34,6 +34,7 @@
     },
     "prefer-stable": true,
     "config": {
+        "platform-check": false,
         "allow-plugins": {
             "php-http/discovery": true
         }
