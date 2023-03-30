@@ -39,9 +39,9 @@ $title = explode(' ', $settings->title);
 </head>
 
 <body class="body">
-    <div class="w-embed w-iframe">
-    </div>
-    <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" role="banner" class="l-nav-section _w-nav w-nav">
+    <!-- <div class="w-embed w-iframe">
+    </div> -->
+    <!-- <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" role="banner" class="l-nav-section _w-nav w-nav">
         <div class="navigation-banner">
             <div class="text-block-101">
                 <span class="text-span-4"><?php echo lang('new'); ?> : </span> <span class="span_color"> <?php echo $settings->block_1_text_under_title; ?> →</span>
@@ -52,7 +52,7 @@ $title = explode(' ', $settings->title);
                 </div>
             <?php } ?>
 
-        </div>
+        </div> -->
 
         <?php if ($settings->google_translation_switch_in_frontend == 'yes') { ?>
             <div class="text-block-101 lang_top">
@@ -74,10 +74,10 @@ $title = explode(' ', $settings->title);
                 }
                 ?></a>
             <nav role="navigation" id="w-node-ebd691a6-3a22-9b70-2dae-f440aac15826-aac15824" class="c-nav-menu w-nav-menu">
-                <a href="frontend#business" class="c-nav-menu__nav-link w-nav-link"><?php echo lang('business'); ?></a>
+                <!-- <a href="frontend#business" class="c-nav-menu__nav-link w-nav-link"><?php echo lang('business'); ?></a>
                 <a href="frontend#service" class="c-nav-menu__nav-link w-nav-link"><?php echo lang('service'); ?></a>
                 <a href="frontend#package" class="c-nav-menu__nav-link w-nav-link"><?php echo lang('package'); ?></a>
-                <a href="frontend#contact" class="c-nav-menu__nav-link w-nav-link"><?php echo lang('contact'); ?></a>
+                <a href="frontend#contact" class="c-nav-menu__nav-link w-nav-link"><?php echo lang('contact'); ?></a> -->
 
                 <?php
                 if ($this->ion_auth->logged_in() == '1') {
@@ -97,9 +97,9 @@ $title = explode(' ', $settings->title);
                 }
                 ?>
                 <a href="<?php echo $link; ?>" target="_blank" class="c-nav-menu__nav-link mr-s is-login-button w-nav-link"><?php echo $link_lang; ?></a>
-                <a href="frontend#book" class="c-button__secondary is--small w-inline-block" data-ix="button-icon">
+                <!-- <a href="frontend#book" class="c-button__secondary is--small w-inline-block" data-ix="button-icon">
                     <div class="c-button__text is--purple is--small"><?php echo lang('register_hospital'); ?></div><img src="front-end/assets/5f16ec24d8bd7908a5d24625/5f3d46263a5ec7752b5a63df_Arrow_purple.svg" width="32" height="32" alt="" class="c-button__icon is--small" />
-                </a>
+                </a> -->
                 <script type="text/javascript">
                     function googleTranslateElementInit() {
                         if ($(window).width() < 760) {
@@ -182,12 +182,12 @@ $title = explode(' ', $settings->title);
     foreach ($slides as $slide) {
     ?>
         <div class="l-section is--hero" id="cover">
-            <div class="w-layout-grid c-hero"><img src="<?php echo $slide->img_url; ?>" loading="lazy" width="595" id="w-node-_0ecfaf60-79bd-5d71-c1f8-96b64e9d0db0-fd5d4922" alt="Illustration of a man sitting at a desk in front of a computer. Dotted lines connect the computer to portraits of different types of partner. " class="c-hero__image" />
+            <div class="w-layout-grid c-hero"><img src="uploads/1554821799398.jpg" loading="lazy" width="595" id="w-node-_0ecfaf60-79bd-5d71-c1f8-96b64e9d0db0-fd5d4922" alt="Illustration of a man sitting at a desk in front of a computer. Dotted lines connect the computer to portraits of different types of partner. " class="c-hero__image" />
                 <div id="w-node-_4781c85d-0ce2-032e-fd4d-6f516a5efda1-fd5d4922" class="c-hero__copy">
                     <div id="w-node-_4e4fa717-af22-91dc-7b5b-71872c988dde-fd5d4922" class="c-hero__container w-clearfix">
-                        <h1 class="c-heading-1"><?php echo $slide->text1; ?><span class="is--bold is--purple c-heading-1"></span></h1>
-                        <p class="c-paragraph is--large"><?php echo $slide->text2; ?></p><a href="frontend#book" class="c-button__primary w-inline-block" data-ix="button-icon">
-                            <div class="c-button__text"><?php echo lang('register_hospital'); ?> </div><img src="front-end/assets/5f16ec24d8bd7908a5d24625/5f3d419ec0cff23f8b7b1a45_Arrow_white.svg" width="48" height="48" alt="" class="c-button__icon is--large" />
+                        <h1 class="c-heading-1">Welcome to Your Hospital Management System.<span class="is--bold is--purple c-heading-1"></span></h1>
+                        <p class="c-paragraph is--large">This is a demo illustration, and your hospital website will be embedded to this page if needed so as to manage online bookings, appointments and consultations</p><a href="auth/login" class="c-button__primary w-inline-block" data-ix="button-icon">
+                            <div class="c-button__text"><?php echo lang('login'); ?> </div><img src="front-end/assets/5f16ec24d8bd7908a5d24625/5f3d419ec0cff23f8b7b1a45_Arrow_white.svg" width="48" height="48" alt="" class="c-button__icon is--large" />
                         </a>
                     </div>
                 </div>
@@ -206,7 +206,7 @@ $title = explode(' ', $settings->title);
 
             </div>
         </div>
-        <div class="l-grid__general l-grid__g2quotes">
+        <!-- <div class="l-grid__general l-grid__g2quotes">
             <div id="contact-home" class="c-card g2-quote w-node-b0976b4d-0227-4222-d266-5fd411407afe-fd5d4922">
                 <div class="w-layout-grid grid">
                     <p id="w-node-_6d3b6b66-9927-6ba5-f997-f97dd56ef33b-fd5d4922" class="c-paragraph is--centermobile">
@@ -222,9 +222,9 @@ $title = explode(' ', $settings->title);
                     <p id="w-node-bc56b118-a6c9-8bb4-437b-44aa020473c2-fd5d4922" class="c-paragraph is--small is--hidden"><span class="text-span-3">✓</span> <?php echo $settings->verified_2; ?></p><img src="<?php echo $settings->comment_logo_2; ?>" loading="lazy" id="w-node-_34a9e484-6736-d378-28a4-c2afe1ee68b9-fd5d4922" alt="" class="g2-quote-stars" />
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div id="partnership" class="l-section l-section__features">
+        <!-- <div id="partnership" class="l-section l-section__features">
             <div class="l-grid__general is--header">
                 <div id="w-node-_65f7d3db-7a0b-4f9d-ff9c-765262361b7c-fd5d4922" class="l-container">
                     <h2 class="c-heading-2 is--center"><?php echo $settings->partner_header_title; ?></h2>
@@ -285,8 +285,8 @@ $title = explode(' ', $settings->title);
                 </div>
                 <img src="<?php echo $settings->partner_image_3; ?>" loading="lazy" alt="illustration of payout&#x27;s UI" data-w-id="0c959c90-d9b0-390a-e2d2-06e1a0359692" id="w-node-_0c959c90-d9b0-390a-e2d2-06e1a0359692-fd5d4922" class="c-feature__image" />
             </div>
-        </div>
-        <div class="l-section is--purple" id="service">
+        </div> -->
+        <!-- <div class="l-section is--purple" id="service">
             <div class="row service_div">
                 <div class="row">
                     <div class="row">
@@ -304,7 +304,7 @@ $title = explode(' ', $settings->title);
                                                                                         if (!empty($service->img_url)) {
                                                                                             echo $service->img_url;
                                                                                         } else {
-                                                                                            echo 'uploads/default-image.png';
+                                                                                            echo 'uploads/1554821799398.jpg';
                                                                                         }
                                                                                         ?>"></span>
                                     <h3 class="title"><?php echo $service->title; ?></h3>
@@ -316,9 +316,9 @@ $title = explode(' ', $settings->title);
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="l-section" id="book">
+        <!-- <div class="l-section" id="book">
 
 
 
@@ -340,7 +340,7 @@ $title = explode(' ', $settings->title);
                 </div>
             </div>
 
-            <div class="w-embed w-script">
+            <!-- <div class="w-embed w-script">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <form action="frontend/addNewHospitalPayment" class="clearfix" id="addNewHospital" enctype="multipart/form-data" method="POST">
@@ -512,12 +512,12 @@ $title = explode(' ', $settings->title);
 
                 <div class="col-md-2"></div>
 
-            </div>
+            </div> -->
 
-        </div>
+        </div> -->
 
 
-        <div class="c-footercta" id="package">
+        <!-- <div class="c-footercta" id="package">
             <div class="">
 
                 <div class="l-grid__general is--header">
@@ -592,11 +592,11 @@ $title = explode(' ', $settings->title);
 
 
             </div>
-        </div>
+        </div> -->
 
 
 
-        <div class="l-section is--partnerships" id="team">
+        <!-- <div class="l-section is--partnerships" id="team">
             <div class="l-grid__general">
                 <div id="w-node-dc6d6587-dc91-094d-f21a-04d2bc4c8090-fd5d4922" class="l-container">
                     <h2 class="c-heading-2"><?php echo $settings->team_title; ?></h2>
@@ -620,11 +620,11 @@ $title = explode(' ', $settings->title);
                     <?php echo $settings->team_commentator_designation; ?>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 
-        <div class="l-section is--purple" id="contact">
+        <!-- <div class="l-section is--purple" id="contact">
 
             <div class="c-card has--form c-card--grid w-node-c71cea45-70e2-8624-fb11-9021034f21fa-d3ca4708">
 
@@ -650,7 +650,7 @@ $title = explode(' ', $settings->title);
 
 
 
-                <div class="w-embed w-script">
+                <!-- <div class="w-embed w-script">
                     <div class="hbspt-form" id="hbspt-form-1623741844431-9103338542">
                         <form action="frontend/send" id="sendEmail" enctype="multipart/form-data" method="POST" class="hs-form stacked hs-form-private hsForm_93389280-7d5f-4a00-a4a2-6b177ad9e886 hs-form-93389280-7d5f-4a00-a4a2-6b177ad9e886 hs-form-93389280-7d5f-4a00-a4a2-6b177ad9e886_568798ab-3c3f-4cfe-9689-3eba2e30f0f0" data-form-id="93389280-7d5f-4a00-a4a2-6b177ad9e886" data-portal-id="7012252" data-reactid=".hbspt-forms-0">
                             <fieldset class="col-md-12">
@@ -711,11 +711,11 @@ $title = explode(' ', $settings->title);
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
 
-        </div>
-        <div class="l-footer">
+        </div> 
+        <!-- <div class="l-footer">
             <div class="l-section is--footer">
                 <div class="l-grid__general">
 
@@ -779,10 +779,10 @@ $title = explode(' ', $settings->title);
 
                 </div>
             </div>
-        </div>
+        </div> -->
         <footer class="site-footer">
             <div class="text-center">
-                <?php echo date('Y'); ?> &copy; <?php echo $this->db->get('settings')->row()->system_vendor; ?>
+                <?php echo date('Y'); ?> &copy; <a href="https://manny.co.ke/" style="color:white" target="_blank">Hospital Management Information System</a>
 
             </div>
 
